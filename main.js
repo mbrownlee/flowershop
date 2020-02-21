@@ -48,5 +48,7 @@ flowerShop.push(hydrangea)
 // The color flower grows in season.
 
 for (const flower of flowerShop) {
-    document.querySelector(".flowerShop").innerHTML += `<li>"The ${flower.color} ${flower.name}  grows in ${flower.season}."</li>`
+    document.querySelector(".flowerShop").innerHTML += `<li>
+    "The ${flower.color} ${flower.name}  grows in ${flower.season}.
+    "</li>`
 }
