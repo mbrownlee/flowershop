@@ -1,49 +1,30 @@
-const tulips = {
-    season: "spring",
-    color: "pink",
-    cut: "dies quickly",
-    weather: "hardy",
-    name: "tulip"
+// createFlower is a variable whose value is a function (=>)
+// (season...name) are parameters of the function flower is a variable whose value is an object
+// season:season first is the key, second is the value - the parameter needs to match the value
+const createFlower = (season, color, cut, weather, name) => {
+    const flower = {
+        season:season,
+        color:color,
+        cut:cut,
+        weather:weather,
+        name:name
+    }
+return flower;
 }
+const tulip = createFlower("spring", "pink", "dies quickly", "hardy", "tulip")
+const rose = createFlower("summer", "red", "long lasting", "sunny", "rose")
+const daisy = createFlower("summer/fall", "white", "average", "rainy", "daisy")
+const sunflower = createFlower("summer", "yellow", "long lasting", "sunny", "sunflower")
+const hydrangea = createFlower("fall", "purple", "best dried", "all ", "hydrangea")
 
-const roses = { 
-    season: "summer",
-    color: "red",
-    cut: "long lasting",
-    weather: "sunny",
-    name: "rose"
-}
 
-const daisies = {
-    season: "summer/fall",
-    color: "white",
-    cut: "average",
-    weather: "rainy",
-    name: "daisy"
-}
-
-const sunflowers = {
-    season: "summer",
-    color: "yellow",
-    cut: "long lasting",
-    weather: "sunny",
-    name: "sunflower"
-}
-
-const hydrangea = {
-    season: "fall",
-    color: "purple",
-    cut: "better dried",
-    weather: "all",
-    name: "hydrangea"
-}
 
 
 const flowerShop = []
-flowerShop.push(tulips)
-flowerShop.push(roses)
-flowerShop.push(daisies)
-flowerShop.push(sunflowers)
+flowerShop.push(tulip)
+flowerShop.push(rose)
+flowerShop.push(daisy)
+flowerShop.push(sunflower)
 flowerShop.push(hydrangea)
 // Display a list item for each flower in this format
 // The color flower grows in season.
